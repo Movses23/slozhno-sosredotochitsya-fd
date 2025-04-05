@@ -9,8 +9,50 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --text-color: #db00ff;
+  --accent-color: #ff0070;
+  --color-hover: rgba(255, 0, 112, 0.4);
+  --text-box: #ff0070;
+  --menu-text: #ff0070;
+  --title-shadow: #ff0070;
+  --text-box-color-dark: #000035;
+  --background: #000028;
+  --about-text: #f1b2ce;
+  --rec-display: block;
+  --title-text: var(--background);
+  --background-color: var(--background);
+  --background-image: url(../images/cover-image-dark.png);
+  --bg: var(--background-image);
+  --color-text: var(--text-color);
+  --text-box-color: var(--text-box);
+  --rec-display-corner: var(--rec-display);
+  --title-shadow-color: var(--title-shadow);
+  --menu-color-text: var(--menu-text);
+  --main-text: var(--about-text);
+  --hover: var(--color-hover);
 }
 
 .theme-dark .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
+  --text-color: #db00ff;
+  --accent-color: #ff0070;
+  --color-hover: rgba(255, 0, 112, 0.4);
+  --text-box: #ff0070;
+  --menu-text: #ff0070;
+  --title-shadow: #ff0070;
+  --text-box-color-dark: #000035;
+  --background: #000028;
+  --about-text: #f1b2ce;
+  --rec-display: block;
+  --title-text: var(--background);
+  --background-color: var(--background);
+  --background-image: url(../images/cover-image-dark.png);
+  --bg: var(--background-image);
+  --color-text: var(--text-color);
+  --text-box-color: var(--text-box);
+  --rec-display-corner: var(--rec-display);
+  --title-shadow-color: var(--title-shadow);
+  --menu-color-text: var(--menu-text);
+  --main-text: var(--about-text);
+  --hover: var(--color-hover);
 }
