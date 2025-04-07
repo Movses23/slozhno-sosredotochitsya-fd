@@ -22,6 +22,7 @@
   grid-template-rows: 1fr min-content 1fr;
   block-size: 100vh;
   padding: 20px;
+  min-height: 668px;
 }
 
 .header__theme-menu-list {
@@ -83,9 +84,8 @@
   justify-self: flex-end;
   align-self: center;
   max-inline-size: 491px;
-  max-height: 71px;
   background-color: var(--text-box-color);
-  color: var(--text-box-color-dark);
+  color: var(--text-box-color-cover);
 }
 
 .decorated-zone::after {
@@ -190,8 +190,9 @@
   font-weight: 700;
   line-height: 23.4px;
   text-align: left;
-  min-inline-size: 315px;
-  max-inline-size: 315px;
+  min-width: 315px;
+  max-width: 315px;
+  width: 100%;
   color: var(--menu-color-text);
 }
 
@@ -240,10 +241,7 @@
 
 .image__masonry {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  max-width: max-content;
-  margin: 0 auto;
 }
 
 .masonry__details {
@@ -255,40 +253,35 @@
 }
 
 .images__size {
-  max-inline-size: 315px;
   grid-column: span 1;
 }
 
 .masonry__size-nature {
-  max-inline-size: 649px;
   grid-column: span 2;
 }
 
 .image__tape {
-  max-block-size: 768px;
   grid-row: 2 / span 3;
 }
 
 .image__ice-cream {
-  max-block-size: 595px;
   grid-row: span 2;
 }
 
 .image__street {
-  max-block-size: 428px;
   grid-row: 3 / span 2;
 }
 
 .image__sunset {
-  max-block-size: 260px;
   grid-row: span 1;
 }
 
 .footer {
-  min-block-size: 768px;
+  block-size: 100vh;
   display: grid;
   position: relative;
   padding: 20px;
+  min-height: 668px;
 }
 
 .footer__heading {
@@ -333,7 +326,6 @@
 
   .cover__text {
     max-inline-size: 364px;
-    min-block-size: 117px;
   }
 
   .main {
@@ -374,33 +366,6 @@
 
   .masonry__image {
     padding-block-end: 0;
-  }
-
-  .image__sunset {
-    max-inline-size: 479px;
-    max-block-size: 192px;
-  }
-
-  .images__size {
-    max-inline-size: 229px;
-  }
-
-  .image__ice-cream {
-    max-block-size: 441px;
-  }
-
-  .image__tape {
-    max-block-size: 568px;
-  }
-
-  .image__books {
-    max-inline-size: 230px;
-    max-block-size: 230px;
-  }
-
-  .image__street {
-    max-inline-size: 479px;
-    max-block-size: 318px;
   }
 
   .footer {
@@ -466,6 +431,10 @@
     gap: 0;
   }
 
+  .text__block {
+    max-width: 100%;
+  }
+
   .more__heading {
     padding-block-start: 20px;
   }
@@ -496,7 +465,6 @@
   }
 
   .footer__heading {
-    max-height: 96px;
     align-self: center;
   }
 
